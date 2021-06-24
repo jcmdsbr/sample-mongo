@@ -28,7 +28,7 @@ namespace Sample.Api.Application.UserCases.Deposit
         /// <summary>
         ///     Deposit to an account
         /// </summary>
-        [HttpPatch("{accountId}/deposit")]
+        [HttpPost("{accountId}/deposit")]
         [SwaggerResponse(204, "The account amount was deposit made", typeof(Account))]
         [SwaggerResponse(404, "The account not found")]
         [SwaggerResponse(400, "The account not be deposit")]

@@ -28,7 +28,7 @@ namespace Sample.Api.Application.UserCases.Withdraw
         /// <summary>
         ///     Withdraw from an account
         /// </summary>
-        [HttpPatch("{accountId}/withdraw")]
+        [HttpPost("{accountId}/withdraw")]
         [SwaggerResponse(204, "The account  was withdraw made", typeof(Account))]
         [SwaggerResponse(400, "The account not be withdraw")]
         [SwaggerResponse(404, "The account not found")]
